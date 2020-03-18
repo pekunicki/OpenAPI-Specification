@@ -140,10 +140,11 @@ components:
       required:
         - name  
       properties:
-        name:
-          type: string
-        tag:
-          type: string    
+        oneOf: 
+          name:
+            type: string
+          tag:
+            type: string    
 
     Error:
       type: object
