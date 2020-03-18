@@ -137,14 +137,16 @@ components:
 
     NewPet:
       type: object
+      oneOf:
+        - required:
+          - name
       required:
         - name  
       properties:
-        oneOf: 
-          name:
-            type: string
-          tag:
-            type: string    
+        name:
+          type: string
+        tag:
+          type: string    
 
     Error:
       type: object
